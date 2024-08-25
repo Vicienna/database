@@ -58,7 +58,8 @@ def view_data(variable):
 @app.route('/')
 def home():
     return jsonify({"message": "Selamat datang di JSON Database API!"})
-    
+
 # Menjalankan server Flask
 if __name__ == '__main__':
     app.run(debug=True)
+    
