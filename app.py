@@ -54,10 +54,10 @@ def view_data(variable):
             return jsonify(entry), 200
     return jsonify({"message": "Data tidak ditemukan!"}), 404
 
-# Endpoint untuk nyambut
-@app.route('/', methods=['GET'])
-def view_data(variable):
-    return jsonify({"message": "Hello!"}), 200
+# Endpoint untuk menyambut pengguna di halaman utama
+@app.route('/')
+def home():
+    return jsonify({"message": "Selamat datang di JSON Database API!"})
     
 # Menjalankan server Flask
 if __name__ == '__main__':
